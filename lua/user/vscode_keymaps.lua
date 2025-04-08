@@ -1,6 +1,6 @@
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
-local vscode = require('vscode')
+-- local vscode = require('vscode')
 
 -- remap leader key
 keymap("n", "<Space>", "", opts)
