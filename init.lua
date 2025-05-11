@@ -1,14 +1,9 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
 if vim.g.vscode then
-	require "user.vscode_keymaps"
-	print("vscode settings loaded.")
+  vim.g.mapleader = " "
+  vim.g.maplocalleader = " "
+  require("vscode_user.vscode_keymaps")
+  print("vscode settings loaded.")
 else
-	print("not in vscode")
+  -- bootstrap lazy.nvim, LazyVim and your plugins
+  require("config.lazy")
 end
-
-
-
-
-
